@@ -795,14 +795,12 @@
                   <div class="zf-tempContDiv">
                     <label class="zf-labelName"> Expiration date </label>
                     <input
-                      type="text"
-                      name="Date"
+                      type="date"
                       id="expirationDate"
                       checktype="c4"
-                      value=""
                       maxlength="25"
-                      placeholder=""
                     />
+
                     <div class="zf-clearBoth"></div>
                     <p
                       id="Date_error"
@@ -916,6 +914,27 @@
             fileNameDisplay.style.display = "block"; // Make it visible
           } else {
             fileNameDisplay.style.display = "none"; // Hide if no file is selected
+          }
+        });
+    </script>
+    <script>
+      document
+        .getElementById("expirationDate")
+        .addEventListener("change", function () {
+          let inputDate = this.value; // Gets the selected date (YYYY-MM-DD)
+          if (inputDate) {
+            let dateObj = new Date(inputDate);
+            let month = (dateObj.getMonth() + 1).toString().padStart(2, "0"); // Months are zero-based
+            let day = dateObj.getDate().toString().padStart(2, "0");
+            let year = dateObj.getFullYear();
+
+            // Format to MM/DD/YYYY
+            let formattedText = `${month}/${day}/${year}`;
+
+            // Display the formatted date
+            let dateDisplay = document.getElementById("dateDisplay");
+            dateDisplay.style.display = "block";
+            dateDisplay.innerText = `Selected Date: ${formattedText}`;
           }
         });
     </script>
