@@ -805,7 +805,7 @@ select:focus-visible {
 }
 
 .zf-small .zf-tempContDiv .zf-form-sBox {
-  width: 49%;
+  width: 100%;
 }
 
 .zf-medium .zf-tempContDiv .zf-form-sBox {
@@ -1435,6 +1435,9 @@ select {
   .col1 {
     width: 100%;
   }
+  .col2.none {
+    display: none;
+}
 
   .col2 {
     width: 100%;
