@@ -796,11 +796,12 @@
                     <label class="zf-labelName"> Expiration date </label>
                     <input
                       type="date"
+  
                       id="expirationDate"
                       checktype="c4"
                       maxlength="25"
                     />
-
+                    <input name="Date" type="hidden" name="FormattedDate" id="formattedExpirationDate" />
                     <!-- Span to display the formatted date -->
 
                     <div class="zf-clearBoth"></div>
@@ -924,6 +925,7 @@
         .getElementById("expirationDate")
         .addEventListener("change", function () {
           let inputDate = this.value; // Gets the selected date (YYYY-MM-DD)
+          console.log("Input: ",inputDate)
           if (inputDate) {
             let dateObj = new Date(inputDate);
             let month = (dateObj.getMonth() + 1).toString().padStart(2, "0"); // Months are zero-based
@@ -932,6 +934,8 @@
 
             // Format to MM/DD/YYYY
             let formattedText = `${month}/${day}/${year}`;
+            console.log(formattedText)
+            document.getElementById("formattedExpirationDate").value = formattedText;
 
             // Display the formatted date
             let dateDisplay = document.getElementById("dateDisplay");
