@@ -21,7 +21,6 @@
       rel="stylesheet"
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/google-libphonenumber/3.2.13/libphonenumber.min.js"></script>
@@ -63,7 +62,7 @@
         /><!-- If GCLID is enabled in Zoho CRM Integration, click details of AdWords Ads will be pushed to Zoho CRM -->
         <div class="zf-templateWrapper">
           <!---------template Header Starts Here---------->
-          <ul class="zf-tempHeadBdr">
+          <ul class="zf-tempHeadBdr" style="display: none;">
             <li class="zf-tempHeadContBdr">
               <h2 class="zf-frmTitle"><em>Request New Address</em></h2>
               <p class="zf-frmDesc"></p>
@@ -199,6 +198,7 @@
                       checktype="c5"
                       value=""
                       placeholder=""
+                      id="Email"
                   /></span>
                   <p
                     id="Email_error"
@@ -941,8 +941,8 @@
       var salesIQFieldsArray = [];
     </script>
       <!-- <script src="js/states.js"></script>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> -->
- <!-- <script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+ <script>
   const dropdownList = $(".dropdown-list");
   const addressInfo = $(".addressInfo");
 
@@ -1193,5 +1193,18 @@
           }
         });
     </script>
+      <script>
+        window.addEventListener("message", function (event) {
+          var email = event.data;
+          document.getElementById("Email").value = email;
+          let checkField = setInterval(function () {
+            if ($("#Email").val() !== "") {
+              $("#loader").hide();
+              clearInterval(checkField);
+            }
+          }, 100);
+          $("#loader").hide();
+        });
+      </script>
   </body>
 </html>
