@@ -1,13 +1,7 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hookah&#x20;Request&#x20;New&#x20;Address</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
-
+    <title>Hookah&#x20;Request&#x20;New&#x20;Address&#x20;Test</title>
     <link href="css/form.css" rel="stylesheet" type="text/css" />
     <script src="js/validation.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -67,7 +61,9 @@
           <!---------template Header Starts Here---------->
           <ul class="zf-tempHeadBdr" style="display: none">
             <li class="zf-tempHeadContBdr">
-              <h2 class="zf-frmTitle"><em>Request New Address</em></h2>
+              <h2 class="zf-frmTitle">
+                <em>Hookah Request New Address Pre Prod</em>
+              </h2>
               <p class="zf-frmDesc"></p>
               <div class="zf-clearBoth"></div>
             </li>
@@ -77,7 +73,7 @@
           <div class="zf-subContWrap zf-topAlign">
             <ul>
               <!---------Description Starts Here---------->
-              <li class="zf-tempFrmWrapper">
+              <li class="zf-tempFrmWrapper zf-note">
                 <label class="zf-descFld"
                   ><div class="upara">
                     Verification may take 1 to 2 business days. If your
@@ -90,24 +86,23 @@
               <!---------Description Ends Here---------->
               <!---------Description Starts Here---------->
               <li class="zf-tempFrmWrapper zf-note">
-                <label class="zf-descFld">
-                  <span class="size" style="font-size: 16px"
-                    >Contact Information</span
-                  ></label
-                >
+                <label class="zf-descFld"><div>Contact Information</div></label>
                 <div class="zf-clearBoth"></div>
               </li>
               <!---------Description Ends Here---------->
               <!---------Name Starts Here---------->
-              <li class="zf-tempFrmWrapper">
+              <li class="zf-tempFrmWrapper zf-name zf-namelarge">
+                <label class="zf-labelName" style="display: none">
+                  Name
+                  <em class="zf-important">*</em>
+                </label>
                 <div class="zf-tempContDiv zf-twoType">
                   <div class="zf-nameWrapper">
                     <div class="main-f">
                       <div class="col1">
                         <label class="zf-labelName"
-                          >First Name
-                          <em class="zf-important">*</em>
-                        </label>
+                          >First Name<em class="zf-important">*</em></label
+                        >
                         <input
                           type="text"
                           maxlength="255"
@@ -119,9 +114,8 @@
 
                       <div class="col2">
                         <label class="zf-labelName"
-                          >Last Name
-                          <em class="zf-important">*</em>
-                        </label>
+                          >Last Name<em class="zf-important">*</em></label
+                        >
                         <input
                           type="text"
                           maxlength="255"
@@ -131,7 +125,6 @@
                         />
                       </div>
                     </div>
-
                     <div class="zf-clearBoth"></div>
                   </div>
                   <p
@@ -139,54 +132,52 @@
                     class="zf-errorMessage"
                     style="display: none"
                   >
-                    Please enter your name
+                    Invalid value
                   </p>
                 </div>
                 <div class="zf-clearBoth"></div>
               </li>
               <!---------Name Ends Here---------->
               <!---------Phone Starts Here---------->
-              <div class="main-f">
-                <div class="col1">
-                  <li class="zf-tempFrmWrapper">
-                    <label class="zf-labelName">
-                      Phone Number
-                      <em class="zf-important">*</em>
-                    </label>
-                    <div class="zf-tempContDiv zf-phonefld">
-                      <div class="zf-phwrapper zf-phNumber">
-                        <span class="zf-addOne">
-                          <input
-                            type="text"
-                            compname="PhoneNumber"
-                            name="PhoneNumber_countrycode"
-                            maxlength="20"
-                            checktype="c7"
-                            value=""
-                            phoneFormat="1"
-                            isCountryCodeEnabled="false"
-                            fieldType="11"
-                            id="international_PhoneNumber_countrycode"
-                            valType="number"
-                            phoneFormatType="1"
-                            placeholder=""
-                          />
-                        </span>
-                        <div class="zf-clearBoth"></div>
+              <li class="zf-tempFrmWrapper">
+                <div class="zf-tempContDiv zf-phonefld">
+                  <div class="zf-phwrapper zf-phNumber">
+                    <div class="main-f">
+                      <div class="col1">
+                        <label class="zf-labelName">
+                          Phone Number
+                          <em class="zf-important">*</em>
+                        </label>
+                        <input
+                          type="text"
+                          compname="PhoneNumber"
+                          name="PhoneNumber_countrycode"
+                          maxlength="20"
+                          checktype="c7"
+                          value=""
+                          phoneFormat="1"
+                          isCountryCodeEnabled="false"
+                          fieldType="11"
+                          id="international_PhoneNumber_countrycode"
+                          valType="number"
+                          phoneFormatType="1"
+                          placeholder=""
+                        />
                       </div>
-                      <p
-                        id="PhoneNumber_error"
-                        class="zf-errorMessage"
-                        style="display: none"
-                      >
-                        Please enter a valid phone number
-                      </p>
+                      <div class="col2"></div>
                     </div>
                     <div class="zf-clearBoth"></div>
-                  </li>
+                  </div>
+                  <p
+                    id="PhoneNumber_error"
+                    class="zf-errorMessage"
+                    style="display: none"
+                  >
+                    Invalid value
+                  </p>
                 </div>
-                <div class="col2 none"></div>
-              </div>
+                <div class="zf-clearBoth"></div>
+              </li>
               <!---------Phone Ends Here---------->
               <!---------Email Starts Here---------->
               <li class="zf-tempFrmWrapper zf-large" style="display: none">
@@ -215,12 +206,8 @@
               </li>
               <!---------Email Ends Here---------->
               <!---------Description Starts Here---------->
-              <li class="zf-note">
-                <label class="zf-descFld">
-                  <span class="size" style="font-size: 16px"
-                    >Address</span
-                  ></label
-                >
+              <li class="zf-tempFrmWrapper zf-note">
+                <label class="zf-descFld"><div>Address</div></label>
                 <div class="zf-clearBoth"></div>
               </li>
               <!---------Description Ends Here---------->
@@ -239,7 +226,7 @@
                         checktype="c1"
                       >
                         <option selected="true" value="-Select-">
-                          Select an option
+                          -Select-
                         </option>
                         <option value="Residential&#x20;Location">
                           Residential Location
@@ -262,205 +249,211 @@
                         class="zf-errorMessage"
                         style="display: none"
                       >
-                        Select an option
+                        Invalid value
                       </p>
                     </div>
                     <div class="zf-clearBoth"></div>
                   </li>
                 </div>
-                <div class="col2 none"></div>
+                <div class="col2"></div>
               </div>
               <!---------Dropdown Ends Here---------->
               <!---------Dropdown Starts Here---------->
-              <li class="zf-tempFrmWrapper zf-small">
-                <label class="zf-labelName">
-                  Country
-                  <em class="zf-important">*</em>
-                </label>
-                <div class="zf-tempContDiv">
-                  <select
-                    class="zf-form-sBox"
-                    name="Dropdown3"
-                    checktype="c1"
-                    id="countryF1"
-                  >
-                    <option value="" id="country" selected="selected">
-                      Select Country
-                    </option>
-                    <option value="ALA">Åland Islands</option>
-                    <option value="ASM">American Samoa</option>
-                    <option value="AND">Andorra</option>
-                    <option value="AIA">Anguilla</option>
-                    <option value="ARG">Argentina</option>
-                    <option value="ARM">Armenia</option>
-                    <option value="ABW">Aruba</option>
-                    <option value="AUT">Austria</option>
-                    <option value="BHS">Bahamas</option>
-                    <option value="BHR">Bahrain</option>
-                    <option value="BGD">Bangladesh</option>
-                    <option value="BRB">Barbados</option>
-                    <option value="BEL">Belgium</option>
-                    <option value="BLZ">Belize</option>
-                    <option value="BMU">Bermuda</option>
-                    <option value="BOL">Bolivia</option>
-                    <option value="BIH">Bosnia & Herzegovina</option>
-                    <option value="BRA">Brazil</option>
-                    <option value="IOT">British Indian Ocean Territory</option>
-                    <option value="VGB">British Virgin Islands</option>
-                    <option value="BGR">Bulgaria</option>
-                    <option value="KHM">Cambodia</option>
-                    <option value="CAN">Canada</option>
-                    <option value="BES">Caribbean Netherlands</option>
-                    <option value="CYM">Cayman Islands</option>
-                    <option value="CHL">Chile</option>
-                    <option value="CHN">China</option>
-                    <option value="CXR">Christmas Island</option>
-                    <option value="CCK">Cocos (Keeling) Islands</option>
-                    <option value="COL">Colombia</option>
-                    <option value="COK">Cook Islands</option>
-                    <option value="CRI">Costa Rica</option>
-                    <option value="HRV">Croatia</option>
-                    <option value="CUW">Curaçao</option>
-                    <option value="CYP">Cyprus</option>
-                    <option value="CZE">Czechia</option>
-                    <option value="DNK">Denmark</option>
-                    <option value="DMA">Dominica</option>
-                    <option value="DOM">Dominican Republic</option>
-                    <option value="ECU">Ecuador</option>
-                    <option value="SLV">El Salvador</option>
-                    <option value="EST">Estonia</option>
-                    <option value="FLK">Falkland Islands</option>
-                    <option value="FRO">Faroe Islands</option>
-                    <option value="FJI">Fiji</option>
-                    <option value="FIN">Finland</option>
-                    <option value="GEO">Georgia</option>
-                    <option value="DEU">Germany</option>
-                    <option value="GIB">Gibraltar</option>
-                    <option value="GRC">Greece</option>
-                    <option value="GRL">Greenland</option>
-                    <option value="GRD">Grenada</option>
-                    <option value="GLP">Guadeloupe</option>
-                    <option value="GUM">Guam</option>
-                    <option value="GTM">Guatemala</option>
-                    <option value="GGY">Guernsey</option>
-                    <option value="GUY">Guyana</option>
-                    <option value="HTI">Haiti</option>
-                    <option value="HMD">Heard & McDonald Islands</option>
-                    <option value="HND">Honduras</option>
-                    <option value="HKG">Hong Kong SAR China</option>
-                    <option value="HUN">Hungary</option>
-                    <option value="ISL">Iceland</option>
-                    <option value="IND">India</option>
-                    <option value="IDN">Indonesia</option>
-                    <option value="IRQ">Iraq</option>
-                    <option value="IRL">Ireland</option>
-                    <option value="IMN">Isle of Man</option>
-                    <option value="ITA">Italy</option>
-                    <option value="JAM">Jamaica</option>
-                    <option value="JPN">Japan</option>
-                    <option value="JEY">Jersey</option>
-                    <option value="JOR">Jordan</option>
-                    <option value="KAZ">Kazakhstan</option>
-                    <option value="KIR">Kiribati</option>
-                    <option value="XKS">Kosovo</option>
-                    <option value="KWT">Kuwait</option>
-                    <option value="KGZ">Kyrgyzstan</option>
-                    <option value="LVA">Latvia</option>
-                    <option value="LBN">Lebanon</option>
-                    <option value="LIE">Liechtenstein</option>
-                    <option value="LTU">Lithuania</option>
-                    <option value="LUX">Luxembourg</option>
-                    <option value="MAC">Macao SAR China</option>
-                    <option value="MYS">Malaysia</option>
-                    <option value="MDV">Maldives</option>
-                    <option value="MLT">Malta</option>
-                    <option value="MHL">Marshall Islands</option>
-                    <option value="MTQ">Martinique</option>
-                    <option value="MYT">Mayotte</option>
-                    <option value="MEX">Mexico</option>
-                    <option value="FSM">Micronesia</option>
-                    <option value="MDA">Moldova</option>
-                    <option value="MCO">Monaco</option>
-                    <option value="MNG">Mongolia</option>
-                    <option value="MNE">Montenegro</option>
-                    <option value="MSR">Montserrat</option>
-                    <option value="NRU">Nauru</option>
-                    <option value="NPL">Nepal</option>
-                    <option value="NLD">Netherlands</option>
-                    <option value="NCL">New Caledonia</option>
-                    <option value="NIC">Nicaragua</option>
-                    <option value="NIU">Niue</option>
-                    <option value="NFK">Norfolk Island</option>
-                    <option value="MKD">North Macedonia</option>
-                    <option value="MNP">Northern Mariana Islands</option>
-                    <option value="NOR">Norway</option>
-                    <option value="OMN">Oman</option>
-                    <option value="PLW">Palau</option>
-                    <option value="PAN">Panama</option>
-                    <option value="PNG">Papua New Guinea</option>
-                    <option value="PRY">Paraguay</option>
-                    <option value="PER">Peru</option>
-                    <option value="PHL">Philippines</option>
-                    <option value="PCN">Pitcairn Islands</option>
-                    <option value="POL">Poland</option>
-                    <option value="PRT">Portugal</option>
-                    <option value="QAT">Qatar</option>
-                    <option value="SMR">San Marino</option>
-                    <option value="SAU">Saudi Arabia</option>
-                    <option value="SRB">Serbia</option>
-                    <option value="SGP">Singapore</option>
-                    <option value="SXM">Sint Maarten</option>
-                    <option value="SVK">Slovakia</option>
-                    <option value="SVN">Slovenia</option>
-                    <option value="SLB">Solomon Islands</option>
-                    <option value="ZAF">South Africa</option>
-                    <option value="SGS">
-                      South Georgia & South Sandwich Islands
-                    </option>
-                    <option value="KOR">South Korea</option>
-                    <option value="ESP">Spain</option>
-                    <option value="LKA">Sri Lanka</option>
-                    <option value="BLM">St. Barthélemy</option>
-                    <option value="SHN">St. Helena</option>
-                    <option value="KNA">St. Kitts & Nevis</option>
-                    <option value="LCA">St. Lucia</option>
-                    <option value="MAF">St. Martin</option>
-                    <option value="SPM">St. Pierre & Miquelon</option>
-                    <option value="VCT">St. Vincent & Grenadines</option>
-                    <option value="SJM">Svalbard & Jan Mayen</option>
-                    <option value="SWE">Sweden</option>
-                    <option value="CHE">Switzerland</option>
-                    <option value="TWN">Taiwan, Province of China</option>
-                    <option value="TJK">Tajikistan</option>
-                    <option value="THA">Thailand</option>
-                    <option value="TON">Tonga</option>
-                    <option value="TTO">Trinidad and Tobago</option>
-                    <option value="TUR">Turkey</option>
-                    <option value="TCA">Turks & Caicos Islands</option>
-                    <option value="UMI">U.S. Outlying Islands</option>
-                    <option value="VIR">U.S. Virgin Islands</option>
-                    <option value="UKR">Ukraine</option>
-                    <option value="ARE">United Arab Emirates</option>
-                    <option value="GBR">United Kingdom</option>
-                    <option value="USA">United States of America</option>
-                    <option value="URY">Uruguay</option>
-                    <option value="UZB">Uzbekistan</option>
-                    <option value="VAT">Vatican City</option>
-                    <option value="VEN">Venezuela</option>
-                    <option value="VNM">Vietnam</option>
-                    <option value="WLF">Wallis & Futuna</option>
-                    <option value="ESH">Western Sahara</option>
-                  </select>
-                  <p
-                    id="Dropdown5_error"
-                    class="zf-errorMessage"
-                    style="display: none"
-                  >
-                    Invalid value
-                  </p>
+              <div class="main-f">
+                <div class="col1">
+                  <li class="zf-tempFrmWrapper zf-small">
+                    <label class="zf-labelName">
+                      Country
+                      <em class="zf-important">*</em>
+                    </label>
+                    <div class="zf-tempContDiv">
+                      <select
+                        class="zf-form-sBox"
+                        name="Dropdown3"
+                        checktype="c1"
+                      >
+                        <option value="" id="country" selected="selected">
+                          Select Country
+                        </option>
+                        <option value="ALA">Åland Islands</option>
+                        <option value="ASM">American Samoa</option>
+                        <option value="AND">Andorra</option>
+                        <option value="AIA">Anguilla</option>
+                        <option value="ARG">Argentina</option>
+                        <option value="ARM">Armenia</option>
+                        <option value="ABW">Aruba</option>
+                        <option value="AUT">Austria</option>
+                        <option value="BHS">Bahamas</option>
+                        <option value="BHR">Bahrain</option>
+                        <option value="BGD">Bangladesh</option>
+                        <option value="BRB">Barbados</option>
+                        <option value="BEL">Belgium</option>
+                        <option value="BLZ">Belize</option>
+                        <option value="BMU">Bermuda</option>
+                        <option value="BOL">Bolivia</option>
+                        <option value="BIH">Bosnia & Herzegovina</option>
+                        <option value="BRA">Brazil</option>
+                        <option value="IOT">
+                          British Indian Ocean Territory
+                        </option>
+                        <option value="VGB">British Virgin Islands</option>
+                        <option value="BGR">Bulgaria</option>
+                        <option value="KHM">Cambodia</option>
+                        <option value="CAN">Canada</option>
+                        <option value="BES">Caribbean Netherlands</option>
+                        <option value="CYM">Cayman Islands</option>
+                        <option value="CHL">Chile</option>
+                        <option value="CHN">China</option>
+                        <option value="CXR">Christmas Island</option>
+                        <option value="CCK">Cocos (Keeling) Islands</option>
+                        <option value="COL">Colombia</option>
+                        <option value="COK">Cook Islands</option>
+                        <option value="CRI">Costa Rica</option>
+                        <option value="HRV">Croatia</option>
+                        <option value="CUW">Curaçao</option>
+                        <option value="CYP">Cyprus</option>
+                        <option value="CZE">Czechia</option>
+                        <option value="DNK">Denmark</option>
+                        <option value="DMA">Dominica</option>
+                        <option value="DOM">Dominican Republic</option>
+                        <option value="ECU">Ecuador</option>
+                        <option value="SLV">El Salvador</option>
+                        <option value="EST">Estonia</option>
+                        <option value="FLK">Falkland Islands</option>
+                        <option value="FRO">Faroe Islands</option>
+                        <option value="FJI">Fiji</option>
+                        <option value="FIN">Finland</option>
+                        <option value="GEO">Georgia</option>
+                        <option value="DEU">Germany</option>
+                        <option value="GIB">Gibraltar</option>
+                        <option value="GRC">Greece</option>
+                        <option value="GRL">Greenland</option>
+                        <option value="GRD">Grenada</option>
+                        <option value="GLP">Guadeloupe</option>
+                        <option value="GUM">Guam</option>
+                        <option value="GTM">Guatemala</option>
+                        <option value="GGY">Guernsey</option>
+                        <option value="GUY">Guyana</option>
+                        <option value="HTI">Haiti</option>
+                        <option value="HMD">Heard & McDonald Islands</option>
+                        <option value="HND">Honduras</option>
+                        <option value="HKG">Hong Kong SAR China</option>
+                        <option value="HUN">Hungary</option>
+                        <option value="ISL">Iceland</option>
+                        <option value="IND">India</option>
+                        <option value="IDN">Indonesia</option>
+                        <option value="IRQ">Iraq</option>
+                        <option value="IRL">Ireland</option>
+                        <option value="IMN">Isle of Man</option>
+                        <option value="ITA">Italy</option>
+                        <option value="JAM">Jamaica</option>
+                        <option value="JPN">Japan</option>
+                        <option value="JEY">Jersey</option>
+                        <option value="JOR">Jordan</option>
+                        <option value="KAZ">Kazakhstan</option>
+                        <option value="KIR">Kiribati</option>
+                        <option value="XKS">Kosovo</option>
+                        <option value="KWT">Kuwait</option>
+                        <option value="KGZ">Kyrgyzstan</option>
+                        <option value="LVA">Latvia</option>
+                        <option value="LBN">Lebanon</option>
+                        <option value="LIE">Liechtenstein</option>
+                        <option value="LTU">Lithuania</option>
+                        <option value="LUX">Luxembourg</option>
+                        <option value="MAC">Macao SAR China</option>
+                        <option value="MYS">Malaysia</option>
+                        <option value="MDV">Maldives</option>
+                        <option value="MLT">Malta</option>
+                        <option value="MHL">Marshall Islands</option>
+                        <option value="MTQ">Martinique</option>
+                        <option value="MYT">Mayotte</option>
+                        <option value="MEX">Mexico</option>
+                        <option value="FSM">Micronesia</option>
+                        <option value="MDA">Moldova</option>
+                        <option value="MCO">Monaco</option>
+                        <option value="MNG">Mongolia</option>
+                        <option value="MNE">Montenegro</option>
+                        <option value="MSR">Montserrat</option>
+                        <option value="NRU">Nauru</option>
+                        <option value="NPL">Nepal</option>
+                        <option value="NLD">Netherlands</option>
+                        <option value="NCL">New Caledonia</option>
+                        <option value="NIC">Nicaragua</option>
+                        <option value="NIU">Niue</option>
+                        <option value="NFK">Norfolk Island</option>
+                        <option value="MKD">North Macedonia</option>
+                        <option value="MNP">Northern Mariana Islands</option>
+                        <option value="NOR">Norway</option>
+                        <option value="OMN">Oman</option>
+                        <option value="PLW">Palau</option>
+                        <option value="PAN">Panama</option>
+                        <option value="PNG">Papua New Guinea</option>
+                        <option value="PRY">Paraguay</option>
+                        <option value="PER">Peru</option>
+                        <option value="PHL">Philippines</option>
+                        <option value="PCN">Pitcairn Islands</option>
+                        <option value="POL">Poland</option>
+                        <option value="PRT">Portugal</option>
+                        <option value="QAT">Qatar</option>
+                        <option value="SMR">San Marino</option>
+                        <option value="SAU">Saudi Arabia</option>
+                        <option value="SRB">Serbia</option>
+                        <option value="SGP">Singapore</option>
+                        <option value="SXM">Sint Maarten</option>
+                        <option value="SVK">Slovakia</option>
+                        <option value="SVN">Slovenia</option>
+                        <option value="SLB">Solomon Islands</option>
+                        <option value="ZAF">South Africa</option>
+                        <option value="SGS">
+                          South Georgia & South Sandwich Islands
+                        </option>
+                        <option value="KOR">South Korea</option>
+                        <option value="ESP">Spain</option>
+                        <option value="LKA">Sri Lanka</option>
+                        <option value="BLM">St. Barthélemy</option>
+                        <option value="SHN">St. Helena</option>
+                        <option value="KNA">St. Kitts & Nevis</option>
+                        <option value="LCA">St. Lucia</option>
+                        <option value="MAF">St. Martin</option>
+                        <option value="SPM">St. Pierre & Miquelon</option>
+                        <option value="VCT">St. Vincent & Grenadines</option>
+                        <option value="SJM">Svalbard & Jan Mayen</option>
+                        <option value="SWE">Sweden</option>
+                        <option value="CHE">Switzerland</option>
+                        <option value="TWN">Taiwan, Province of China</option>
+                        <option value="TJK">Tajikistan</option>
+                        <option value="THA">Thailand</option>
+                        <option value="TON">Tonga</option>
+                        <option value="TTO">Trinidad and Tobago</option>
+                        <option value="TUR">Turkey</option>
+                        <option value="TCA">Turks & Caicos Islands</option>
+                        <option value="UMI">U.S. Outlying Islands</option>
+                        <option value="VIR">U.S. Virgin Islands</option>
+                        <option value="UKR">Ukraine</option>
+                        <option value="ARE">United Arab Emirates</option>
+                        <option value="GBR">United Kingdom</option>
+                        <option value="USA">United States of America</option>
+                        <option value="URY">Uruguay</option>
+                        <option value="UZB">Uzbekistan</option>
+                        <option value="VAT">Vatican City</option>
+                        <option value="VEN">Venezuela</option>
+                        <option value="VNM">Vietnam</option>
+                        <option value="WLF">Wallis & Futuna</option>
+                        <option value="ESH">Western Sahara</option>
+                      </select>
+                      <p
+                        id="Dropdown3_error"
+                        class="zf-errorMessage"
+                        style="display: none"
+                      >
+                        Invalid value
+                      </p>
+                    </div>
+                    <div class="zf-clearBoth"></div>
+                  </li>
                 </div>
-                <div class="zf-clearBoth"></div>
-              </li>
+                <div class="col2"></div>
+              </div>
               <!---------Dropdown Ends Here---------->
               <!--address-->
               <!---------Address Starts Here---------->
@@ -471,23 +464,22 @@
                     <div class="main-f">
                       <div class="col1">
                         <label class="zf-labelName"
-                          >Street Address
-                          <em class="zf-important">*</em>
-                        </label>
+                          >Street Address<em class="zf-important">*</em></label
+                        >
                         <input
                           type="text"
                           maxlength="255"
                           name="Address_AddressLine1"
                           checktype="c1"
                           placeholder=""
-                          class="street"
                         />
                       </div>
                       <div class="col2">
                         <label class="zf-labelName"
-                          >Suite, Unit, Apartment, Box
-                          <em class="zf-important">*</em>
-                        </label>
+                          >Suite, Unit, Apartment, Box<em class="zf-important"
+                            >*</em
+                          ></label
+                        >
                         <input
                           type="text"
                           maxlength="255"
@@ -498,11 +490,10 @@
                       </div>
                     </div>
                     <div class="main-f">
-                      <div class="col1">
+                      <div class="zf-flLeft zf-addtwo col1">
                         <label class="zf-labelName"
-                          >City
-                          <em class="zf-important">*</em>
-                        </label>
+                          >City<em class="zf-important">*</em></label
+                        >
                         <input
                           type="text"
                           maxlength="255"
@@ -511,11 +502,13 @@
                           placeholder=""
                         />
                       </div>
-                      <div class="col2">
+                      <div class="zf-flLeft zf-addtwo col2">
                         <label class="zf-labelName"
-                          >State &#x2f; Region &#x2f; Province
-                          <em class="zf-important">*</em>
-                        </label>
+                          >State &#x2f; Region &#x2f; Province<em
+                            class="zf-important"
+                            >*</em
+                          ></label
+                        >
                         <input
                           type="text"
                           maxlength="255"
@@ -526,11 +519,12 @@
                       </div>
                     </div>
                     <div class="main-f">
-                      <div class="col1">
+                      <div class="zf-flLeft zf-addtwo col1">
                         <label class="zf-labelName"
-                          >Postal &#x2f; Zip Code
-                          <em class="zf-important">*</em>
-                        </label>
+                          >Postal &#x2f; Zip Code<em class="zf-important"
+                            >*</em
+                          ></label
+                        >
                         <input
                           type="text"
                           maxlength="255"
@@ -538,18 +532,17 @@
                           checktype="c1"
                           placeholder=""
                         />
-
-                        <div class="zf-clearBoth"></div>
-                        <p
-                          id="Address_error"
-                          class="zf-errorMessage"
-                          style="display: none"
-                        >
-                          Please fill the required fields
-                        </p>
                       </div>
-                      <div class="col2 none"></div>
+                      <div class="col2"></div>
                     </div>
+                    <div class="zf-clearBoth"></div>
+                    <p
+                      id="Address_error"
+                      class="zf-errorMessage"
+                      style="display: none"
+                    >
+                      Invalid value
+                    </p>
                   </div>
                 </div>
                 <div class="zf-eclearBoth"></div>
@@ -581,60 +574,61 @@
               </li>
               <!---------Single Line Ends Here---------->
               <!---------Description Starts Here---------->
-              <li class="zf-note">
-                <label class="zf-descFld">
-                  <span class="size" style="font-size: 16px"
-                    >License</span
-                  ></label
-                >
+              <li class="zf-tempFrmWrapper zf-note">
+                <label class="zf-descFld"><div>License</div></label>
                 <div class="zf-clearBoth"></div>
               </li>
-
               <!---------Description Ends Here---------->
               <div class="main-f">
                 <!---------Dropdown Starts Here---------->
-                <li class="zf-tempFrmWrapper">
+                <li class="zf-tempFrmWrapper zf-small col1">
                   <label class="zf-labelName"> License Type </label>
-                  <select class="zf-form-sBox" name="Dropdown4" checktype="c1">
-                    <option selected="true" value="-Select-">
-                      Select an option
-                    </option>
-                    <option value="Tobacco&#x20;License">
-                      Tobacco License
-                    </option>
-                    <option value="Resale&#x20;Tax&#x20;License">
-                      Resale Tax License
-                    </option>
-                  </select>
-                  <p
-                    id="Dropdown4_error"
-                    class="zf-errorMessage"
-                    style="display: none"
-                  >
-                    Invalid value
-                  </p>
+                  <div class="zf-tempContDiv">
+                    <select
+                      class="zf-form-sBox"
+                      name="Dropdown4"
+                      checktype="c1"
+                    >
+                      <option selected="true" value="-Select-">-Select-</option>
+                      <option value="Tobacco&#x20;License">
+                        Tobacco License
+                      </option>
+                      <option value="Resale&#x20;Tax&#x20;License">
+                        Resale Tax License
+                      </option>
+                    </select>
+                    <p
+                      id="Dropdown4_error"
+                      class="zf-errorMessage"
+                      style="display: none"
+                    >
+                      Invalid value
+                    </p>
+                  </div>
                   <div class="zf-clearBoth"></div>
                 </li>
-
                 <!---------Dropdown Ends Here---------->
                 <!---------Date Starts Here---------->
-                <li class="zf-tempFrmWrapper">
+                <li class="zf-tempFrmWrapper zf-date col2">
+                  <label class="zf-labelName"> Expiration date </label>
                   <div class="zf-tempContDiv">
-                    <label class="zf-labelName"> Expiration date </label>
-                    <input
-                      type="date"
-                      id="expirationDate"
-                      checktype="c4"
-                      maxlength="25"
-                    />
-                    <input
-                      name="Date"
-                      type="hidden"
-                      name="FormattedDate"
-                      id="formattedExpirationDate"
-                    />
-                    <!-- Span to display the formatted date -->
-
+                    <span>
+                      <input
+                        type="date"
+                        id="expirationDate"
+                        checktype="c4"
+                        value=""
+                        maxlength="25"
+                        placeholder=""
+                        id="expirationDate"
+                      />
+                      <input
+                        name="Date"
+                        type="hidden"
+                        name="FormattedDate"
+                        id="formattedExpirationDate"
+                      />
+                    </span>
                     <div class="zf-clearBoth"></div>
                     <p
                       id="Date_error"
@@ -643,15 +637,15 @@
                     >
                       Invalid value
                     </p>
-                    <div class="zf-clearBoth"></div>
                   </div>
+                  <div class="zf-clearBoth"></div>
                 </li>
+                <!---------Date Ends Here---------->
               </div>
-              <!---------Date Ends Here---------->
               <!--fileupload-->
               <!---------File Upload Starts Here---------->
               <li class="zf-tempFrmWrapper">
-                <label class="zf-labelName">License</label>
+                <label class="zf-labelName">License </label>
                 <div class="zf-tempContDiv">
                   <label for="fileInput" class="dropzone">
                     <i class="fa-solid fa-arrow-up-from-bracket"></i>
@@ -669,13 +663,13 @@
                     ></p>
                   </label>
                   <input type="file" name="FileUpload" id="fileInput" hidden />
-                  <p
-                    id="FileUpload_error"
-                    class="zf-errorMessage"
+                  <input
+                    type="file"
+                    name="FileUpload"
+                    checktype="c1"
                     style="display: none"
-                  >
-                    Choose any file for this field.
-                  </p>
+                  />
+                  <p id="FileUpload_error" class="zf-errorMessage"></p>
                 </div>
                 <div class="zf-clearBoth"></div>
               </li>
@@ -732,218 +726,6 @@
       var isSalesIQIntegrationEnabled = false;
       var salesIQFieldsArray = [];
     </script>
-    <!-- <script src="js/states.js"></script>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
- <script>
-  const dropdownList = $(".dropdown-list");
-  const addressInfo = $(".addressInfo");
-
-  function fetchData(query, callback) {
-    $.get(query, callback);
-  }
-
-  // Function to handle the search input
-  function searchDropdown() {
-    var country = $(".dropdown-countries").find(":selected").text();
-    var country_val = $(".dropdown-countries").find(":selected").val();
-    if (country_val == "USA") {
-      var city = $(".Address_City").val();
-      var zipCode = $(".Address_ZipCode").val();
-      var inputLength = $("#searchInput").val().length;
-      if (inputLength > 0) {
-        const query = `https://api.addressy.com/Capture/Interactive/Find/v1.10/json3.ws?Key=TY78-BD75-NW81-XE97&Countries=US&Limit=20&Text=${$(
-          "#searchInput"
-        ).val()}`;
-
-        // Call the API to get data based on the search query
-        fetchData(query, (data) => {
-          const filteredOptions = data.Items;
-          dropdownList.empty();
-          filteredOptions.forEach((option) => {
-            if (
-              option.Type === "Container" ||
-              option.Type === "Street" ||
-              option.Type === "Locality" ||
-              option.Type === "BuildingNumber"
-            ) {
-              dropdownList.append(
-                `<div class="dropdown-item"> ${option.Text} ${option.Description.includes("-")
-                  ? option.Description.substring(
-                    0,
-                    option.Description.lastIndexOf(" - ")
-                  )
-                  : option.Description
-                } <span id="${option.Id
-                }" onclick="callback(event, this);">see all ${option.Description
-                }</span></div>`
-              );
-            } else {
-              dropdownList.append(
-                `<div class="dropdown-item" id="${option.Id
-                }" onclick="getAddressDetail(event, this);"> ${option.Text
-                } ${option.Description.includes("-")
-                  ? option.Description.substring(
-                    0,
-                    option.Description.lastIndexOf(" - ")
-                  )
-                  : option.Description
-                }</div>`
-              );
-            }
-          });
-        });
-      } else {
-        dropdownList.empty();
-      }
-    } else {
-      dropdownList.empty();
-    }
-  }
-
-  function callback(e, thisObj) {
-    let id = thisObj.id;
-    const query = `https://api.addressy.com/Capture/Interactive/Find/v1.10/json3.ws?Key=TY78-BD75-NW81-XE97&Countries=US&Limit=20&Container=${id}`;
-    fetchData(query, (data) => {
-      const filteredOptions = data.Items;
-      dropdownList.empty();
-      dropdownList.css({ "max-height": "300px", "overflow-y": "auto" });
-
-      filteredOptions.forEach((option) => {
-        if (option.Type === "Container") {
-          dropdownList.append(
-            `<div class="dropdown-item"> ${option.Text} ${option.Description.includes("-")
-              ? option.Description.substring(
-                0,
-                option.Description.lastIndexOf(" - ")
-              )
-              : option.Description
-            }<span id="${option.Id
-            }" onclick="callback(event, this);">see all ${option.Description
-            }</span></div>`
-          );
-        } else if (option.Type === "Street") {
-          dropdownList.append(
-            `<div class="dropdown-item" id="Street, ${option.Text
-            }" onclick="getAddressDetail(event, this);"> ${option.Text} ${option.Description.includes("-")
-              ? option.Description.substring(
-                0,
-                option.Description.lastIndexOf(" - ")
-              )
-              : option.Description
-            }  <span id="${option.Id
-            }" onclick="callback(event, this);">see all ${option.Description
-            }</span></div></div>`
-          );
-        } else if (option.Type === "Locality") {
-          dropdownList.append(
-            `<div class="dropdown-item" id="Locality, ${option.Text
-            }" onclick="getAddressDetail(event, this);"> ${option.Text} ${option.Description.includes("-")
-              ? option.Description.substring(
-                0,
-                option.Description.lastIndexOf(" - ")
-              )
-              : option.Description
-            } <span id="${option.Id
-            }" onclick="callback(event, this);">see all ${option.Description
-            }</span></div></div>`
-          );
-        } else if (option.Type === "BuildingNumber") {
-          dropdownList.append(
-            `<div class="dropdown-item" id="BuildingNumber, ${option.Text
-            }" onclick="getAddressDetail(event, this);"> ${option.Text}  ${option.Description.includes("-")
-              ? option.Description.substring(
-                0,
-                option.Description.lastIndexOf(" - ")
-              )
-              : option.Description
-            }<span id="${option.Id
-            }" onclick="callback(event, this);">see all ${option.Description
-            }</span></div></div>`
-          );
-        } else {
-          dropdownList.append(
-            `<div class="dropdown-item" id="${option.Id
-            }" onclick="getAddressDetail(event, this);"> ${option.Text} ${option.Description.includes("-")
-              ? option.Description.substring(
-                0,
-                option.Description.lastIndexOf(" - ")
-              )
-              : option.Description
-            }</div>`
-          );
-        }
-      });
-    });
-  }
-
-  function getAddressDetail(e, thisObj) {
-    let id = thisObj.id;
-    const query = `https://api.addressy.com/Capture/Interactive/Retrieve/v1.2/json3.ws?Key=TY78-BD75-NW81-XE97&Id=${id}`;
-    fetchData(query, (data) => {
-      const filteredOptions = data.Items;
-      filteredOptions.forEach((option) => {
-        $(".street").val(option.Line1);
-        $(".city-text").val(option.City);
-        $("#stateLabel").val(option.ProvinceName);
-        $(".state-dropdown").val(option.ProvinceCode).change();
-        $("#postalCode").val(option.PostalCode);
-        $("#county").val(option.AdminAreaName);
-        dropdownList.empty();
-      });
-    });
-  }
-
-  var input = document.querySelector("#international_PhoneNumber_countrycode");
-  input.addEventListener("input", function () {
-    if (!input.value.startsWith("+")) {
-      input.value = "+" + input.value.replace(/[^0-9]/g, '');
-    }
-  });
-
-  var iti = window.intlTelInput(input, {
-    separateDialCode: false,
-    preferredCountries: ["US"],
-    allowDropdown: true,
-    hiddenInput: "full",
-    utilsScript: "//cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/js/utils.js",
-    onlyCountries: [
-      "AX", "AS", "AD", "AI", "AR", "AM", "AW", "AT", "BS", "BH", "BD", "BB",
-      "BE", "BZ", "BM", "BO", "BA", "BR", "IO", "VG", "BG", "KH", "CA", "KY",
-      "CL", "CN", "CX", "CC", "CO", "CK", "CR", "HR", "CY", "CZ", "DK", "DM",
-      "DO", "EC", "SV", "EE", "FK", "FO", "FJ", "FI", "GE", "DE", "GI", "GR",
-      "GL", "GD", "GP", "GU", "GT", "GG", "HM", "HN", "HK", "HU", "IS", "IN",
-      "ID", "IQ", "IE", "IM", "IT", "JM", "JP", "JE", "JO", "KZ", "KI", "KW",
-      "KG", "LV", "LB", "LI", "LT", "LU", "MO", "MY", "MV", "MT", "MH", "MQ",
-      "YT", "MX", "FM", "MD", "MC", "MN", "ME", "MS", "NR", "NP", "NL", "NC",
-      "NI", "NU", "NF", "MK", "MP", "NO", "OM", "PW", "PA", "PG", "PY", "PE",
-      "PH", "PN", "PL", "PT", "QA", "SM", "SA", "RS", "SG", "SK", "SI", "SB",
-      "ZA", "GS", "KR", "ES", "LK", "BL", "SH", "KN", "LC", "MF", "PM", "VC",
-      "SJ", "SE", "CH", "TW", "TJ", "TH", "TO", "TT", "TR", "TC", "UM", "VI",
-      "UA", "AE", "GB", "US", "UY", "UZ", "VA", "VE", "VN", "WF", "EH"
-    ],
-  });
-
-  // Event listener for country change
-  document.querySelector("#international_PhoneNumber_countrycode").addEventListener("countrychange", function () {
-    var countySel = document.querySelector(".dropdown-countries");
-    var countryData = iti.getSelectedCountryData();
-    var countryName = countryData.name;
-    var iso2 = countryData.iso2.toUpperCase();
-    var iso3 = convert_ISO_3166_2_to_1[iso2] || "N/A";
-    countySel.value = iso3;
-    var event = new Event("change");
-    countySel.dispatchEvent(event);
-  });
-
-  // Prevent form submission on Enter key press
-  document.addEventListener("keydown", function (event) {
-    if (event.key === "Enter") {
-      event.preventDefault(); // Prevent form from being submitted through enter key
-      zf_ValidateAndSubmit();
-    }
-  });
-</script> -->
-
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         let today = new Date();
