@@ -1359,11 +1359,12 @@ select {
 }
 .upara{
   font-size: 12px;
+  font-weight: 400;
     border-radius: 8px;
     border: 1px solid #D7D8DB;
     padding: 12px;
     background-color: #F6F5F8;
-    max-width: 800px;
+    max-width: 860px;
     letter-spacing: 0.2px;
 }
 
