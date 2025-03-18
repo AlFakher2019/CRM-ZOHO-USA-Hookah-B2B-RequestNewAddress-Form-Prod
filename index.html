@@ -968,8 +968,8 @@
           filteredOptions.forEach((option) => {
             $(".street").val(option.Line1);
             $(".city-text").val(option.City);
-            $("#stateLabel").val(option.ProvinceName);
-            $(".state-dropdown").val(option.ProvinceCode).change();
+            $("#stateLabel").val(option.ProvinceCode);
+            $(".state-dropdown").val(option.ProvinceName).change();
             $("#postalCode").val(option.PostalCode);
             dropdownList.empty();
           });
