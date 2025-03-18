@@ -1348,7 +1348,7 @@ select {
 
 .dropzone .subtext {
   font-size: 12px;
-  color: #6C6D73; 
+  color: #6c6d73;
 }
 
 #browse {
@@ -1357,38 +1357,41 @@ select {
   text-decoration: underline;
   cursor: pointer;
 }
-.upara{
+.upara {
   font-size: 12px;
-  font-weight: 400;
-    border-radius: 8px;
-    border: 1px solid #D7D8DB;
-    padding: 12px;
-    background-color: #F6F5F8;
-    max-width: 860px;
-    letter-spacing: 0.2px;
+  font-weight: 400 !important;
+  border-radius: 8px;
+  border: 1px solid #d7d8db;
+  padding: 12px;
+  background-color: #f6f5f8;
+  max-width: 860px;
+  letter-spacing: 0.2px;
 }
 
 .iti {
   width: 100%;
 }
-
+.iti__country {
+  display: flex;
+}
 
 @media only screen and (max-width: 600px) {
   .zf-small .zf-phwrapper {
     width: 100%;
-}
-.zf-medium .zf-phonefld input[type="text"], .zf-small .zf-phonefld input[type="text"] {
-  width: 100%;
-}
-.zf-small .zf-tempContDiv .zf-form-sBox {
-  width: 100%;
-}
-.zf-templateWrapper .zf-note {
-  padding: 28px 0px 16px 0px;
-}
-.col3 {
-  width: 100%;
-}
+  }
+  .zf-medium .zf-phonefld input[type="text"],
+  .zf-small .zf-phonefld input[type="text"] {
+    width: 100%;
+  }
+  .zf-small .zf-tempContDiv .zf-form-sBox {
+    width: 100%;
+  }
+  .zf-templateWrapper .zf-note {
+    padding: 28px 0px 16px 0px;
+  }
+  .col3 {
+    width: 100%;
+  }
   .one-line {
     flex-direction: column;
   }
@@ -1416,7 +1419,7 @@ select {
   }
   .zf-fmFooter .zf-submitColor {
     width: 100%;
-}
+  }
 
   .zf-tempContDiv input[type="text"],
   .zf-tempContDiv textarea,
@@ -1434,13 +1437,13 @@ select {
   .main-f {
     flex-direction: column;
     row-gap: 16px;
-}
+  }
   .col1 {
     width: 100%;
   }
   .col2.none {
     display: none;
-}
+  }
 
   .col2 {
     width: 100%;
@@ -1472,4 +1475,23 @@ select {
   100% {
     transform: rotate(360deg);
   }
+}
+
+.dropdown-list {
+  position: absolute;
+  background: #f5f5f5;
+  width: 49%;
+  z-index: 10;
+  border-radius: 5px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.dropdown-item {
+  cursor: pointer;
+  padding: 4px 15px;
+}
+
+.dropdown-item span {
+  color: blue;
 }
