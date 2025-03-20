@@ -24,8 +24,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/google-libphonenumber/3.2.13/libphonenumber.min.js"></script>
     <style>
       .state-dropdown,
-      .state-text
-      {
+      .state-text {
         display: none;
       }
     </style>
@@ -162,6 +161,7 @@
                           valType="number"
                           phoneFormatType="1"
                           placeholder=""
+                          oninput="this.value = this.value.replace(/[^0-9+]/g, '')"
                         />
                       </div>
                       <div class="col2"></div>
@@ -508,19 +508,20 @@
                       <div class="zf-flLeft zf-addtwo col2">
                         <label class="zf-labelName"
                           >State &#x2f; Region &#x2f; Province<em
-                            class="zf-important star" id="state_star"
+                            class="zf-important star"
+                            id="state_star"
                             >*</em
                           ></label
                         >
                         <select
-                        class="state-dropdown zf-form-sBox"
-                        checktype="c1"
-                        placeholder=""
-                      >
-                        <option value="" selected="selected" disabled>
-                          Select State
-                        </option>
-                      </select>
+                          class="state-dropdown zf-form-sBox"
+                          checktype="c1"
+                          placeholder=""
+                        >
+                          <option value="" selected="selected" disabled>
+                            Select State
+                          </option>
+                        </select>
                         <input
                           type="text"
                           class="Address_Region state-text"
@@ -779,20 +780,6 @@
           }
         });
     </script>
-    <script>
-      window.addEventListener("message", function (event) {
-        var email = event.data;
-        document.getElementById("Email").value = email;
-        let checkField = setInterval(function () {
-          if ($("#Email").val() !== "") {
-            $("#loader").hide();
-            clearInterval(checkField);
-          }
-        }, 100);
-        $("#loader").hide();
-      });
-    </script>
-
     <!-- loqate API -->
     <script>
       const dropdownList = $(".dropdown-list");
@@ -967,7 +954,7 @@
             $(".street").val(option.Line1);
             $(".city-text").val(option.City);
             $("#stateLabel").val(option.ProvinceCode);
-            $(".state-dropdown").val(option.ProvinceName).change();
+            $(".state-dropdown").val(option.ProvinceCode).change();
             $("#postalCode").val(option.PostalCode);
             dropdownList.empty();
           });
@@ -1166,9 +1153,21 @@
       document.addEventListener("keydown", function (event) {
         if (event.key === "Enter") {
           event.preventDefault(); // Prevent form from being submitted through enter key
-          console.log("hello")
           zf_ValidateAndSubmit();
         }
+      });
+    </script>
+    <script>
+      window.addEventListener("message", function (event) {
+        var email = event.data;
+        document.getElementById("Email").value = email;
+        let checkField = setInterval(function () {
+          if ($("#Email").val() !== "") {
+            $("#loader").hide();
+            clearInterval(checkField);
+          }
+        }, 100);
+        $("#loader").hide();
       });
     </script>
   </body>
