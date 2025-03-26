@@ -1184,5 +1184,22 @@
         setInitialPhoneNumber();
       });
     </script>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const input = document.getElementById("searchInput");
+          document.addEventListener("click", function (event) {
+            const loqateDropdown = document.querySelector(".dropdown-list");
+            if (!input.contains(event.target) && loqateDropdown && !loqateDropdown.contains(event.target)) {
+              loqateDropdown.style.display = "none";
+            }
+          });
+          input.addEventListener("input", function () {
+            const loqateDropdown = document.querySelector(".dropdown-list");
+            if (loqateDropdown) {
+              loqateDropdown.style.display = "block"; 
+            }
+          });
+        });
+      </script>
   </body>
 </html>
