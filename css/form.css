@@ -237,11 +237,13 @@ input[type="date"] {
 .zf-tempContDiv input[type="text"]:focus,
 .zf-tempContDiv textarea:focus {
   border: 1px solid rgba(71, 17, 105, 1) !important;
+  box-shadow: 0 0 0 2px #ebdef7;
 }
 
 select:focus-visible {
   outline: none;
   border: 1px solid rgba(71, 17, 105, 1) !important;
+  box-shadow: 0 0 0 2px #ebdef7;
 }
 
 .zf-tempContDiv textarea {
