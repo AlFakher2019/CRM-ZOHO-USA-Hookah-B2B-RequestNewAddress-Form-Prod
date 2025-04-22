@@ -820,10 +820,10 @@ select {
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
-  background-image: url("https://25636661.fs1.hubspotusercontent-eu1.net/hubfs/25636661/Thank%20You%20page%20logo/Vector.svg");
-  background-repeat: no-repeat, repeat;
-  background-position: right 1em top 50%, 0 0;
-  background-size: auto, 100%;
+  background-image: url("data:image/svg+xml,<svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'><g ><path id='Vector' d='M7 10L12.0008 14.58L17 10' stroke='%2335363B' stroke-linecap='round' stroke-linejoin='round'/></g></svg>");
+  background-repeat: no-repeat;
+  background-size: 22px 22px;
+  background-position: right 19px center;
 }
 
 .zf-name .zf-tempContDiv .zf-form-sBox {
