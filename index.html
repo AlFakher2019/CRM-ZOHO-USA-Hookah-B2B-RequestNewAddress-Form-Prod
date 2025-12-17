@@ -793,12 +793,22 @@
       function searchDropdown() {
         var country = $(".dropdown-countries").find(":selected").text();
         var country_val = $(".dropdown-countries").find(":selected").val();
-        if (country_val == "USA") {
+        
+        // Map country codes to ISO codes for the API
+        var countryMap = {
+          "USA": "US",
+          "CAN": "CA",
+          "MEX": "MX"
+        };
+        
+        var apiCountryCode = countryMap[country_val];
+        
+        if (apiCountryCode) {
           var city = $(".Address_City").val();
           var zipCode = $(".Address_ZipCode").val();
           var inputLength = $("#searchInput").val().length;
           if (inputLength > 0) {
-            const query = `https://api.addressy.com/Capture/Interactive/Find/v1.10/json3.ws?Key=TY78-BD75-NW81-XE97&Countries=US&Limit=20&Text=${$(
+            const query = `https://api.addressy.com/Capture/Interactive/Find/v1.10/json3.ws?Key=TY78-BD75-NW81-XE97&Countries=${apiCountryCode}&Limit=20&Text=${$(
               "#searchInput"
             ).val()}`;
 
