@@ -2,7 +2,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hookah&#x20;Request&#x20;New&#x20;Address&#x20;Test</title>
+    <title>Hookah Request New Address Test</title>
     <link href="css/form.css" rel="stylesheet" type="text/css" />
     <script src="js/validation.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -31,7 +31,6 @@
     </style>
   </head>
   <body class="zf-backgroundBg">
-    <!-- Change or deletion of the name attributes in the input tag will lead to empty values on record submission-->
     <div class="zf-templateWidth">
       <form
         action="https://forms.zohopublic.com/airglobal/form/HookahRequestNewAddress/formperma/raogNFvYf_jfCMWFPxd1mT2zoAdCDKuWnJ-GivVTmXw/htmlRecords/submit"
@@ -42,23 +41,10 @@
         enctype="multipart/form-data"
         id="form"
       >
-        <input
-          type="hidden"
-          name="zf_referrer_name"
-          value=""
-        /><!-- To Track referrals , place the referrer name within the " " in the above hidden input field -->
-        <input
-          type="hidden"
-          name="zf_redirect_url"
-          value=""
-        /><!-- To redirect to a specific page after record submission , place the respective url within the " " in the above hidden input field -->
-        <input
-          type="hidden"
-          name="zc_gad"
-          value=""
-        /><!-- If GCLID is enabled in Zoho CRM Integration, click details of AdWords Ads will be pushed to Zoho CRM -->
+        <input type="hidden" name="zf_referrer_name" value="" />
+        <input type="hidden" name="zf_redirect_url" value="" />
+        <input type="hidden" name="zc_gad" value="" />
         <div class="zf-templateWrapper">
-          <!---------template Header Starts Here---------->
           <ul class="zf-tempHeadBdr" style="display: none">
             <li class="zf-tempHeadContBdr">
               <h2 class="zf-frmTitle">
@@ -68,11 +54,8 @@
               <div class="zf-clearBoth"></div>
             </li>
           </ul>
-          <!---------template Header Ends Here---------->
-          <!---------template Container Starts Here---------->
           <div class="zf-subContWrap zf-topAlign">
             <ul>
-              <!---------Description Starts Here---------->
               <li class="zf-tempFrmWrapper zf-note">
                 <label class="zf-descFld"
                   ><div class="upara">
@@ -83,14 +66,10 @@
                 >
                 <div class="zf-clearBoth"></div>
               </li>
-              <!---------Description Ends Here---------->
-              <!---------Description Starts Here---------->
               <li class="zf-tempFrmWrapper zf-note">
                 <label class="zf-descFld"><div>Contact Information</div></label>
                 <div class="zf-clearBoth"></div>
               </li>
-              <!---------Description Ends Here---------->
-              <!---------Name Starts Here---------->
               <li class="zf-tempFrmWrapper zf-name zf-namelarge">
                 <label class="zf-labelName" style="display: none">
                   Name
@@ -111,7 +90,6 @@
                           placeholder=""
                         />
                       </div>
-
                       <div class="col2">
                         <label class="zf-labelName"
                           >Last Name<em class="zf-important">*</em></label
@@ -137,8 +115,6 @@
                 </div>
                 <div class="zf-clearBoth"></div>
               </li>
-              <!---------Name Ends Here---------->
-              <!---------Phone Starts Here---------->
               <li class="zf-tempFrmWrapper">
                 <div class="zf-tempContDiv zf-phonefld">
                   <div class="zf-phwrapper zf-phNumber">
@@ -179,8 +155,6 @@
                 </div>
                 <div class="zf-clearBoth"></div>
               </li>
-              <!---------Phone Ends Here---------->
-              <!---------Email Starts Here---------->
               <li class="zf-tempFrmWrapper zf-large" style="display: none">
                 <label class="zf-labelName"> Email </label>
                 <div class="zf-tempContDiv">
@@ -205,14 +179,10 @@
                 </div>
                 <div class="zf-clearBoth"></div>
               </li>
-              <!---------Email Ends Here---------->
-              <!---------Description Starts Here---------->
               <li class="zf-tempFrmWrapper zf-note">
                 <label class="zf-descFld"><div>Address</div></label>
                 <div class="zf-clearBoth"></div>
               </li>
-              <!---------Description Ends Here---------->
-              <!---------Dropdown Starts Here---------->
               <div class="main-f">
                 <div class="col1">
                   <li class="zf-tempFrmWrapper zf-small">
@@ -229,19 +199,19 @@
                         <option selected="true" value="-Select-">
                           Select an option
                         </option>
-                        <option value="Residential&#x20;Location">
+                        <option value="Residential Location">
                           Residential Location
                         </option>
-                        <option value="Business&#x20;Location">
+                        <option value="Business Location">
                           Business Location
                         </option>
-                        <option value="Alternate&#x20;Business&#x20;Location">
+                        <option value="Alternate Business Location">
                           Alternate Business Location
                         </option>
-                        <option value="Freight&#x20;Forwarder">
+                        <option value="Freight Forwarder">
                           Freight Forwarder
                         </option>
-                        <option value="Freight&#x20;Pickup&#x20;Center">
+                        <option value="Freight Pickup Center">
                           Freight Pickup Center
                         </option>
                       </select>
@@ -258,8 +228,6 @@
                 </div>
                 <div class="col2"></div>
               </div>
-              <!---------Dropdown Ends Here---------->
-              <!---------Dropdown Starts Here---------->
               <div class="main-f">
                 <div class="col1">
                   <li class="zf-tempFrmWrapper zf-small">
@@ -272,6 +240,7 @@
                         class="zf-form-sBox dropdown-countries"
                         name="Dropdown3"
                         checktype="c1"
+                        id="countryDropdown"
                       >
                         <option value="" id="country" selected="selected">
                           Select an option
@@ -294,9 +263,7 @@
                         <option value="BOL">Bolivia</option>
                         <option value="BIH">Bosnia & Herzegovina</option>
                         <option value="BRA">Brazil</option>
-                        <option value="IOT">
-                          British Indian Ocean Territory
-                        </option>
+                        <option value="IOT">British Indian Ocean Territory</option>
                         <option value="VGB">British Virgin Islands</option>
                         <option value="BGR">Bulgaria</option>
                         <option value="KHM">Cambodia</option>
@@ -405,9 +372,7 @@
                         <option value="SVN">Slovenia</option>
                         <option value="SLB">Solomon Islands</option>
                         <option value="ZAF">South Africa</option>
-                        <option value="SGS">
-                          South Georgia & South Sandwich Islands
-                        </option>
+                        <option value="SGS">South Georgia & South Sandwich Islands</option>
                         <option value="KOR">South Korea</option>
                         <option value="ESP">Spain</option>
                         <option value="LKA">Sri Lanka</option>
@@ -455,9 +420,6 @@
                 </div>
                 <div class="col2"></div>
               </div>
-              <!---------Dropdown Ends Here---------->
-              <!--address-->
-              <!---------Address Starts Here---------->
               <li class="zf-tempFrmWrapper zf-address zf-addrlarge">
                 <label class="zf-labelName"> </label>
                 <div class="zf-tempContDiv zf-address">
@@ -508,7 +470,7 @@
                       </div>
                       <div class="zf-flLeft zf-addtwo col2">
                         <label class="zf-labelName"
-                          >State &#x2f; Region &#x2f; Province<em
+                          >State / Region / Province<em
                             class="zf-important star"
                             id="state_star"
                             >*</em
@@ -536,7 +498,7 @@
                     <div class="main-f">
                       <div class="zf-flLeft zf-addtwo col1">
                         <label class="zf-labelName"
-                          >Postal &#x2f; Zip Code<em class="zf-important"
+                          >Postal / Zip Code<em class="zf-important"
                             >*</em
                           ></label
                         >
@@ -564,8 +526,6 @@
                 </div>
                 <div class="zf-eclearBoth"></div>
               </li>
-              <!---------Address Ends Here---------->
-              <!---------Single Line Starts Here---------->
               <li class="zf-tempFrmWrapper zf-small" style="display: none">
                 <label class="zf-labelName"> State Code </label>
                 <div class="zf-tempContDiv">
@@ -590,15 +550,11 @@
                 </div>
                 <div class="zf-clearBoth"></div>
               </li>
-              <!---------Single Line Ends Here---------->
-              <!---------Description Starts Here---------->
               <li class="zf-tempFrmWrapper zf-note">
                 <label class="zf-descFld"><div>License</div></label>
                 <div class="zf-clearBoth"></div>
               </li>
-              <!---------Description Ends Here---------->
               <div class="main-f">
-                <!---------Dropdown Starts Here---------->
                 <li class="zf-tempFrmWrapper zf-small col1">
                   <label class="zf-labelName"> License Type </label>
                   <div class="zf-tempContDiv">
@@ -608,10 +564,10 @@
                       checktype="c1"
                     >
                       <option selected="true" value="-Select-">Select an option</option>
-                      <option value="Tobacco&#x20;License">
+                      <option value="Tobacco License">
                         Tobacco License
                       </option>
-                      <option value="Resale&#x20;Tax&#x20;License">
+                      <option value="Resale Tax License">
                         Resale Tax License
                       </option>
                     </select>
@@ -625,8 +581,6 @@
                   </div>
                   <div class="zf-clearBoth"></div>
                 </li>
-                <!---------Dropdown Ends Here---------->
-                <!---------Date Starts Here---------->
                 <li class="zf-tempFrmWrapper zf-date col2">
                   <label class="zf-labelName"> Expiration date </label>
                   <div class="zf-tempContDiv">
@@ -657,10 +611,7 @@
                   </div>
                   <div class="zf-clearBoth"></div>
                 </li>
-                <!---------Date Ends Here---------->
               </div>
-              <!--fileupload-->
-              <!---------File Upload Starts Here---------->
               <li class="zf-tempFrmWrapper">
                 <label class="zf-labelName">License </label>
                 <div class="zf-tempContDiv">
@@ -690,21 +641,16 @@
                 </div>
                 <div class="zf-clearBoth"></div>
               </li>
-
-              <!---------File Upload Ends Here---------->
             </ul>
           </div>
-          <!---------template Container Starts Here---------->
           <ul>
             <li class="zf-fmFooter">
               <button class="zf-submitColor">Request new address</button>
             </li>
           </ul>
         </div>
-        <!-- 'zf-templateWrapper' ends -->
       </form>
     </div>
-    <!-- 'zf-templateWidth' ends -->
     <script type="text/javascript">
       var zf_DateRegex = new RegExp(
         "^([0][1-9]|1[012])[\/](([0][1-9])|([1-2][0-9])|([3][0-1]))[\/](?:(?:19|20)[0-9]{2})$"
@@ -749,6 +695,11 @@
         today.setDate(today.getDate() + 1);
         let tomorrow = today.toISOString().split("T")[0];
         document.getElementById("expirationDate").setAttribute("min", tomorrow);
+        
+        // Add listener to country dropdown for debugging
+        $("#countryDropdown").on("change", function() {
+          console.log("Country changed to:", $(this).val());
+        });
       });
     </script>
     <script>
@@ -783,18 +734,28 @@
     </script>
     <!-- loqate API -->
     <script>
+      const LOQATE_API_KEY = "TY78-BD75-NW81-XE97";
       const dropdownList = $(".dropdown-list");
       const addressInfo = $(".addressInfo");
 
       function fetchData(query, callback) {
-        $.get(query, callback);
+        console.log("Fetching:", query);
+        $.get(query)
+          .done(function(data) {
+            console.log("API Response:", data);
+            callback(data);
+          })
+          .fail(function(jqXHR, textStatus, errorThrown) {
+            console.error("API Error:", textStatus, errorThrown);
+            console.error("Response:", jqXHR.responseText);
+            dropdownList.empty();
+          });
       }
-      // Function to handle the search input
+      
       function searchDropdown() {
-        var country = $(".dropdown-countries").find(":selected").text();
-        var country_val = $(".dropdown-countries").find(":selected").val();
+        var country_val = $("#countryDropdown").val();
+        console.log("searchDropdown called, country:", country_val);
         
-        // Map country codes to ISO codes for the API
         var countryMap = {
           "USA": "US",
           "CAN": "CA",
@@ -802,18 +763,20 @@
         };
         
         var apiCountryCode = countryMap[country_val];
+        console.log("Mapped to API code:", apiCountryCode);
         
         if (apiCountryCode) {
-          var city = $(".Address_City").val();
-          var zipCode = $(".Address_ZipCode").val();
           var inputLength = $("#searchInput").val().length;
           if (inputLength > 0) {
-            const query = `https://api.addressy.com/Capture/Interactive/Find/v1.10/json3.ws?Key=TY78-BD75-NW81-XE97&Countries=${apiCountryCode}&Limit=20&Text=${$(
-              "#searchInput"
-            ).val()}`;
+            const searchText = $("#searchInput").val();
+            const query = `https://api.addressy.com/Capture/Interactive/Find/v1.10/json3.ws?Key=${LOQATE_API_KEY}&Countries=${apiCountryCode}&Limit=20&Text=${encodeURIComponent(searchText)}`;
 
-            // Call the API to get data based on the search query
             fetchData(query, (data) => {
+              if (!data || !data.Items || data.Items.length === 0) {
+                dropdownList.empty();
+                console.log("No results found");
+                return;
+              }
               const filteredOptions = data.Items;
               dropdownList.empty();
               filteredOptions.forEach((option) => {
@@ -859,14 +822,28 @@
             dropdownList.empty();
           }
         } else {
+          console.log("Country not supported for address lookup");
           dropdownList.empty();
         }
       }
 
       function callback(e, thisObj) {
         let id = thisObj.id;
-        const query = `https://api.addressy.com/Capture/Interactive/Find/v1.10/json3.ws?Key=TY78-BD75-NW81-XE97&Countries=US&Limit=20&Container=${id}`;
+        var country_val = $("#countryDropdown").val();
+        
+        var countryMap = {
+          "USA": "US",
+          "CAN": "CA",
+          "MEX": "MX"
+        };
+        
+        var apiCountryCode = countryMap[country_val] || "US";
+        
+        const query = `https://api.addressy.com/Capture/Interactive/Find/v1.10/json3.ws?Key=${LOQATE_API_KEY}&Countries=${apiCountryCode}&Limit=20&Container=${encodeURIComponent(id)}`;
         fetchData(query, (data) => {
+          if (!data || !data.Items || data.Items.length === 0) {
+            return;
+          }
           const filteredOptions = data.Items;
           dropdownList.empty();
           dropdownList.css({ "max-height": "300px", "overflow-y": "auto" });
@@ -958,7 +935,7 @@
 
       function getAddressDetail(e, thisObj) {
         let id = thisObj.id;
-        const query = `https://api.addressy.com/Capture/Interactive/Retrieve/v1.2/json3.ws?Key=TY78-BD75-NW81-XE97&Id=${id}`;
+        const query = `https://api.addressy.com/Capture/Interactive/Retrieve/v1.2/json3.ws?Key=${LOQATE_API_KEY}&Id=${encodeURIComponent(id)}`;
         fetchData(query, (data) => {
           const filteredOptions = data.Items;
           filteredOptions.forEach((option) => {
@@ -971,19 +948,16 @@
           });
         });
       }
+      
       var input = document.querySelector(
         "#international_PhoneNumber_countrycode"
       );
-      // Event listener to ensure the "+" is always there
       input.addEventListener("input", function () {
-        // If "+" is removed, add it back
         if (!input.value.startsWith("+")) {
-          input.value = "+" + input.value.replace(/[^0-9]/g, ""); // Only allow digits after "+"
+          input.value = "+" + input.value.replace(/[^0-9]/g, "");
         }
       });
-      var input = document.querySelector(
-        "#international_PhoneNumber_countrycode"
-      );
+      
       var iti = window.intlTelInput(input, {
         separateDialCode: false,
         preferredCountries: ["US"],
@@ -992,163 +966,10 @@
         utilsScript:
           "//cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/js/utils.js",
         onlyCountries: [
-          "AX",
-          "AS",
-          "AD",
-          "AI",
-          "AR",
-          "AM",
-          "AW",
-          "AT",
-          "BS",
-          "BH",
-          "BD",
-          "BB",
-          "BE",
-          "BZ",
-          "BM",
-          "BO",
-          "BA",
-          "BR",
-          "IO",
-          "VG",
-          "BG",
-          "KH",
-          "CA",
-          "KY",
-          "CL",
-          "CN",
-          "CX",
-          "CC",
-          "CO",
-          "CK",
-          "CR",
-          "HR",
-          "CY",
-          "CZ",
-          "DK",
-          "DM",
-          "DO",
-          "EC",
-          "SV",
-          "EE",
-          "FK",
-          "FO",
-          "FJ",
-          "FI",
-          "GE",
-          "DE",
-          "GI",
-          "GR",
-          "GL",
-          "GD",
-          "GP",
-          "GU",
-          "GT",
-          "GG",
-          "HM",
-          "HN",
-          "HK",
-          "HU",
-          "IS",
-          "IN",
-          "ID",
-          "IQ",
-          "IE",
-          "IM",
-          "IT",
-          "JM",
-          "JP",
-          "JE",
-          "JO",
-          "KZ",
-          "KI",
-          "KW",
-          "KG",
-          "LV",
-          "LB",
-          "LI",
-          "LT",
-          "LU",
-          "MO",
-          "MY",
-          "MV",
-          "MT",
-          "MH",
-          "MQ",
-          "YT",
-          "MX",
-          "FM",
-          "MD",
-          "MC",
-          "MN",
-          "ME",
-          "MS",
-          "NR",
-          "NP",
-          "NL",
-          "NC",
-          "NI",
-          "NU",
-          "NF",
-          "MK",
-          "MP",
-          "NO",
-          "OM",
-          "PW",
-          "PA",
-          "PG",
-          "PY",
-          "PE",
-          "PH",
-          "PN",
-          "PL",
-          "PT",
-          "QA",
-          "SM",
-          "SA",
-          "RS",
-          "SG",
-          "SK",
-          "SI",
-          "SB",
-          "ZA",
-          "GS",
-          "KR",
-          "ES",
-          "LK",
-          "BL",
-          "SH",
-          "KN",
-          "LC",
-          "MF",
-          "PM",
-          "VC",
-          "SJ",
-          "SE",
-          "CH",
-          "TW",
-          "TJ",
-          "TH",
-          "TO",
-          "TT",
-          "TR",
-          "TC",
-          "UM",
-          "VI",
-          "UA",
-          "AE",
-          "GB",
-          "US",
-          "UY",
-          "UZ",
-          "VA",
-          "VE",
-          "VN",
-          "WF",
-          "EH",
+          "AX","AS","AD","AI","AR","AM","AW","AT","BS","BH","BD","BB","BE","BZ","BM","BO","BA","BR","IO","VG","BG","KH","CA","KY","CL","CN","CX","CC","CO","CK","CR","HR","CY","CZ","DK","DM","DO","EC","SV","EE","FK","FO","FJ","FI","GE","DE","GI","GR","GL","GD","GP","GU","GT","GG","HM","HN","HK","HU","IS","IN","ID","IQ","IE","IM","IT","JM","JP","JE","JO","KZ","KI","KW","KG","LV","LB","LI","LT","LU","MO","MY","MV","MT","MH","MQ","YT","MX","FM","MD","MC","MN","ME","MS","NR","NP","NL","NC","NI","NU","NF","MK","MP","NO","OM","PW","PA","PG","PY","PE","PH","PN","PL","PT","QA","SM","SA","RS","SG","SK","SI","SB","ZA","GS","KR","ES","LK","BL","SH","KN","LC","MF","PM","VC","SJ","SE","CH","TW","TJ","TH","TO","TT","TR","TC","UM","VI","UA","AE","GB","US","UY","UZ","VA","VE","VN","WF","EH",
         ],
       });
+      
       document
         .querySelector("#international_PhoneNumber_countrycode")
         .addEventListener("countrychange", function () {
@@ -1161,9 +982,10 @@
           var event = new Event("change");
           countySel.dispatchEvent(event);
         });
+        
       document.addEventListener("keydown", function (event) {
         if (event.key === "Enter") {
-          event.preventDefault(); // Prevent form from being submitted through enter key
+          event.preventDefault();
           zf_ValidateAndSubmit();
         }
       });
@@ -1194,22 +1016,22 @@
         setInitialPhoneNumber();
       });
     </script>
-      <script>
-        document.addEventListener("DOMContentLoaded", function () {
-          const input = document.getElementById("searchInput");
-          document.addEventListener("click", function (event) {
-            const loqateDropdown = document.querySelector(".dropdown-list");
-            if (!input.contains(event.target) && loqateDropdown && !loqateDropdown.contains(event.target)) {
-              loqateDropdown.style.display = "none";
-            }
-          });
-          input.addEventListener("input", function () {
-            const loqateDropdown = document.querySelector(".dropdown-list");
-            if (loqateDropdown) {
-              loqateDropdown.style.display = "block"; 
-            }
-          });
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const input = document.getElementById("searchInput");
+        document.addEventListener("click", function (event) {
+          const loqateDropdown = document.querySelector(".dropdown-list");
+          if (!input.contains(event.target) && loqateDropdown && !loqateDropdown.contains(event.target)) {
+            loqateDropdown.style.display = "none";
+          }
         });
-      </script>
+        input.addEventListener("input", function () {
+          const loqateDropdown = document.querySelector(".dropdown-list");
+          if (loqateDropdown) {
+            loqateDropdown.style.display = "block"; 
+          }
+        });
+      });
+    </script>
   </body>
 </html>
